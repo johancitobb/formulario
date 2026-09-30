@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Estudiantil</title>
+
+</head>
+<body>
+    <section>
+       <form action="" method="post">
+         <!--header son los titulos de los codigos-->
+
+        <header>
+            <img src="img/gorra.jpg.jpeg" alt="Gorra" width="75px">
+            <h1>FORMULARIO DE REGISTRO DE ESTUDIANTES</h1>
+        </header>
+        <header>
+            <h2>Instituto Tecnologico Superior "QUITO"</h2>
+        </header>
+        <header>
+            <h2>1. Datos personales</h2>
+        </header>
+        <div>
+            <form action="" method="get"></form>
+            <div>
+                <label for="nombre"> Ingrese Nombres: </label>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label for="apellido"> Ingrese Apellidos: </label>
+                <input type="text" id="apellido">
+            </div>
+            <div>
+                <label for="nacimiento">Fecha de nacimiento: </label>
+                <!--el date sirve para seleccionar una fecha con interfaz grafica
+                y el max par poner limite de fecha-->
+                <input type="date" id="nacimiento" max="2026-10-01">
+            </div>
+            <p>Genero:</p>
+            <!--el radio te permite seleccionar una opcion de muchas alternativas
+            el name sirve identificar datos de un formulario-->
+            <label for="femenino">Femenino</label>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+             <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+             <label for="Otro">Otro</label>
+            <input type="radio" id="Otro" name="genero" value="Otro">
+            <div>
+                <!--el select te ayuda con una lista desplegable
+                el requerid te obliga amarcar la casilla de forma obligatoria-->
+                <label for="estadocivil">Estado Civil:</label>
+                <select name="estadocivil" id="estado.civil" required>
+                    <option value="" disabled selected>Selecciona tu Estado Civil</option>
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Viudo">Viudo</option>
+                    <option value="Libre">Union Libre</option>
+                </select>               
+            </div>
+            <div>
+                <label for="gmail">Ingrese Correo:</label>
+                <input type="email" id="gmail">     
+            </div>
+            <div>
+                <!--el tel es espeficico para numeros celulares-->
+                <label for="telefono"> Ingrese Teleforno: </label>
+                <input type="tel" id="telefono">
+            </div>
+            <div>
+                <label for="direccion"> Ingrese Dirección: </label>
+                <input type="text" id="direccion">
+            </div>
+
+            <header>
+                <h2>2. Informacion Academica</h2>
+            </header>
+            <div>
+                <label for="carera">Carrera:</label>
+                <select name="carrera" id="carera" required>
+                    <option value="" disabled selected>Selecciona tu Carrera</option>
+                    <option value="IA">Inteligencia Artificial</option>
+                    <option value="AM">Animación Multimedia</option>
+                    <option value="TH">Talento Humano</option>
+                    <option value="DS">Desarrollo de Software</option>
+                    <option value="MD">Marketing Digital</option>
+                </select>
+            </div>
+            <div>
+                <label for="nivels">Nivel:</label>
+                <select name="nivel" id="nivels" required>
+                    <option value="" disabled selected>Selecciona tu Nivel</option>
+                    <option value="1">Nivel 1</option>
+                    <option value="2">Nivel 2</option>
+                    <option value="3">Nivel 3</option>
+                    <option value="4">Nivel 4</option>
+                    <option value="5">Nivel 5</option>
+                </select>
+            </div>
+            <div>
+                <p>Modalidad</p>
+                <label for="presencial">Presencial</label>
+                <input type="radio" id="presencial" name="modalidad" value="presencial">
+                <label for="Virtual">Virtual</label>
+                <input type="radio" id="Virtual" name="modalidad" value="Virtual">
+                <label for="Hibrida">Hibrida</label>
+                <input type="radio" id="Hibrida" name="modalidad" value="Hibrida">
+            </div>
+            <div>
+                <label for="Interes">Como se entero de la Institución:</label>
+                <input type="text" id="Interes">
+            </div>
+            <header>
+                <h2>3. Habilidades y Conocimientos</h2>
+            </header>
+            <h3>Marque sus áreas de interés</h3>
+            <div>
+                <!--el checkbox crea un cuadro interactivo-->
+                <label>
+                    <input type="checkbox" name="interes" value="web"> 
+                    Desarrollo WEB
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interes" value="ia"> 
+                    Inteligencia Artificial
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interes" value="redes"> 
+                    Redes y Seguridad
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interes" value="bd"> 
+                    Base de Datos
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interes" value="movil"> 
+                    Desarrollo Móvil
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interes" value="ciencia"> 
+                    Ciencia de Datos
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interes" value="robotica"> 
+                    Robótica
+                </label><br>
+                <label>
+                    <input type="checkbox" name="interes" value="otras"> 
+                    Otras
+                </label>
+            </div>
+            <h3>Nivel de Conocimientos en Programación</h3>
+            <div>
+                <label>
+                    <input type="checkbox" name="conocimiento" value="basico"> 
+                    Basico
+                </label><br>
+                <label>
+                    <input type="checkbox" name="conocimiento" value="Intermedio"> 
+                    Intermedio
+                </label><br>
+                <label>
+                    <input type="checkbox" name="conocimiento" value="Avanzado"> 
+                    Avanzado
+                </label>
+            </div>
+            <header>
+                <h2>4. Información Adiconal</h2>
+            </header>
+            <!--filw es para cargar archivos-->
+            <div>
+                <label>Cargue su fotografía: 
+                    <input type="file" name="foto">
+                </label><br>
+            </div>
+            <div>
+                <label>Adjuntar Documentos(Opcional):
+                    <input type="file" name="documento">
+                </label><br>
+            </div>
+            <div>
+                <label for="observaciones">Observaciones:</label>
+                <input type="text" id="observaciones">
+            </div>
+            <div>
+                <input type="submit" value="Registrar">
+                <input type="reset" value="Limpiar">
+            </div>
+
+            
+        </div>
+
+         
+
+            
+       </form>
+    </section>
+    
+</body>
+</html>
