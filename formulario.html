@@ -37,7 +37,7 @@
                 y el max par poner limite de fecha-->
                 <input type="date" id="nacimiento" max="2026-10-01">
             </div>
-            <p>Genero:</p>
+            Genero:<br>
             <!--el radio te permite seleccionar una opcion de muchas alternativas
             el name sirve identificar datos de un formulario-->
             <label for="femenino">Femenino</label>
@@ -99,13 +99,30 @@
                 </select>
             </div>
             <div>
-                <p>Modalidad</p>
+                Modalidad: <br>
                 <label for="presencial">Presencial</label>
                 <input type="radio" id="presencial" name="modalidad" value="presencial">
                 <label for="Virtual">Virtual</label>
                 <input type="radio" id="Virtual" name="modalidad" value="Virtual">
                 <label for="Hibrida">Hibrida</label>
                 <input type="radio" id="Hibrida" name="modalidad" value="Hibrida">
+            </div>
+            <div>
+                 <label for="periodo">Periodo Academico:</label>
+                <select name="periodo" id="periodo" required>
+                    <option value="" disabled selected>Selecciona tu periodo</option>
+                    <option value="MA">Marzo - Agosto</option>
+                    <option value="SF">Septiembre - Febrero</option>
+                </select>
+            </div>
+            <div>
+                  turno: <br>
+                <label for="mañana">Mañana</label>
+                <input type="radio" id="mañana" name="turno" value="presencial">
+                <label for="tarde">Tarde</label>
+                <input type="radio" id="tarde" name="turno" value="Tarde">
+                <label for="noche">Noche</label>
+                <input type="radio" id="noche" name="turno" value="noche">
             </div>
             <div>
                 <label for="Interes">Como se entero de la Institución:</label>
@@ -168,15 +185,16 @@
             <header>
                 <h2>4. Información Adiconal</h2>
             </header>
-            <!--filw es para cargar archivos-->
+            <!--file es para cargar archivos
+            y el accept solo te deja ingresar documwentos excactos-->
             <div>
                 <label>Cargue su fotografía: 
-                    <input type="file" name="foto">
+                    <input type="file" name="foto" accept=".jpg, .jpeg">
                 </label><br>
             </div>
             <div>
                 <label>Adjuntar Documentos(Opcional):
-                    <input type="file" name="documento">
+                    <input type="file" name="documento" multiple accept=".pdf">
                 </label><br>
             </div>
             <div>
